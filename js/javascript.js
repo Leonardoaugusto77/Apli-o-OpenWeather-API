@@ -34,9 +34,9 @@ const showWeatherData = async (city) => {
    const data =  await getshowWeatherData(city)
 
    cityElement.innerText = data.name;
-  tempElement.innerText = parseInt(data.main.temp);
-  descElement.innerText = data.weather[0].description;
-  weatherIconElement.setAttribute(
+   tempElement.innerText = parseInt(data.main.temp);
+   descElement.innerText = data.weather[0].description;
+   weatherIconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`
   );
